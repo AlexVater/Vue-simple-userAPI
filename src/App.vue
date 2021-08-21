@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img class="logo" alt="Vue logo" src="./assets/logo.png">
+    <Users />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Users from './components/Users.vue'  
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Users
   }
 }
 </script>
 
 <style>
+body {
+  color: #fff;
+  background: rgb(4,35,70);
+  background: radial-gradient(circle, rgba(4,35,70,1) 0%, rgba(12,89,70,1) 100%); 
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 1rem;;
+}
+
+.logo{
+  width: 65px;
 }
 </style>
